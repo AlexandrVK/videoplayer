@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./scripts/font-awesome.min.css">
     <title>Videoplayer</title>
     <style>
-        .player {
+        .vp-player {
             width: 800px;
             height: 600px;
             box-shadow: 0px 0px 0px 10px rgba(128, 128, 128, 0.5);
@@ -18,17 +18,17 @@
             flex-direction: column;
         }
 
-        .buttons-panel {
+        .vp-buttons-panel {
             background-color: black;
             display: flex;
             align-items:center;
         }
 
-        .stretcher {
+        .vp-stretcher {
             flex-grow: 6;
         }
 
-        .button {
+        .vp-button {
             border-style: none;
             cursor: pointer;
             color: white;
@@ -42,23 +42,23 @@
 </head>
 
 <body>
-    <div id="player" class="player">
-        <div class="js-video-container stretcher"></div>
-        <div class="buttons-panel ">
-            <button class="js-play-button button">
+    <div id="player" class="vp-player">
+        <div class="js-video-container vp-stretcher"></div>
+        <div class="vp-buttons-panel">
+            <button class="js-play-button vp-button">
                 <i class="fa fa-play"></i>
             </button>
-            <button class="js-pause-button button"  hidden>
+            <button class="js-pause-button vp-button"  hidden>
                 <i class="fa fa-pause"></i>
             </button>
-            <button class="js-mute-button button">
+            <button class="js-mute-button vp-button">
                 <i class="fa fa-volume-up"></i>
             </button>
-            <button class="js-volume-button button" hidden>
+            <button class="js-volume-button vp-button" hidden>
                 <i class="fa fa-volume-off"></i>
             </button>
-            <div class="stretcher"></div>
-            <button class="js-fullscreen-button button">
+            <div class="vp-stretcher"></div>
+            <button class="js-fullscreen-button vp-button">
                 <i class="fa fa-expand"></i>
             </button>
         </div>
